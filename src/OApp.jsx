@@ -15,7 +15,7 @@ const helloData = [
         <Hello key={index} name={data.name} message={data.message}/>
       ))}
 
-      <Contact email="Kittiyaporn044@gmail.com" phone="0928066393"/>
+      <Contact email="Darunee@gmail.com" phone="23032000"/>
     </div>
   )
 }

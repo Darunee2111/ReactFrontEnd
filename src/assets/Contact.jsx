@@ -4,16 +4,14 @@ export default function Contact(prop) {
     console.log({ message, name});
     return (
         <div>
-            <h1>
-                {message} {name}
-            </h1>
+            <h2>{props.email} {props.phon}</h2>
+            <p>Send me a message</p>
         </div>
     );
 };
 
-export default Hello
 
-Hello.PropTypes = {
+Contact.PropTypes = {
     message: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
 };

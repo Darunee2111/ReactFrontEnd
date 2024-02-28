@@ -17,3 +17,8 @@ Hello.PropTypes = {
     message: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
 };
+
+Hello.defaultProps = {
+    name: "User",
+    message: "How are you?"
+    }

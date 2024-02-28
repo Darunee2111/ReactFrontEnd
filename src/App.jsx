@@ -1,10 +1,21 @@
+import Contact from "./assets/Contact"
+import Counter from "./assets/Counter"
 import Hello from "./assets/Hello"
 
 function App() {
+const helloData = [
+  {name: "Darunee", message: 'Hi there'},
+  {name: "Tom", message: 'Hi there'}
+]
+
   return (
     <div className="App">
-      <Hello name = "Bob" message = "How are You"/>
-      <Hello name = "Tom" message = "Good Day"/>
+      <Counter />
+      {helloData.map((data, index) => (
+        <Hello key={index} name={data.name} message={data.message}/>
+      ))}
+
+      <Contact email="Kittiyaporn044@gmail.com" phone="0928066393"/>
     </div>
   )
 }
